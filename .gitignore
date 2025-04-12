@@ -10,3 +10,17 @@ aws_cf_deploy_anything_llm.json
 yarn.lock
 *.bak
 .idea
+
+# User-generated and uploaded content
+/server/storage/documents/**
+!/server/storage/documents/DOCUMENTS.md
+/server/storage/assets/**
+!/server/storage/assets/anything-llm.png
+/server/storage/assets/pfp/**
+/server/storage/vector-cache/**
+/server/storage/comkey/*.pem
+/server/storage/models/downloaded/**
+/collector/storage/tmp/**
+/collector/hotdir/**
+!/collector/hotdir/__HOTDIR__.md
+/server/storage/anythingllm.db
