@@ -35,7 +35,10 @@ export default function Footer() {
 
   useEffect(() => {
     async function fetchFooterData() {
+      // Clear the cache to force a refresh from the server
+      localStorage.removeItem('anythingllm_footer_links');
       const { footerData } = await System.fetchCustomFooterIcons();
+      console.log("Footer data:", footerData); // Debug log
       setFooterData(footerData);
     }
     fetchFooterData();
@@ -115,24 +118,44 @@ export default function Footer() {
   return (
     <div className="flex justify-center mb-2">
       <div className="flex space-x-4">
-        {footerData.map((item, index) => (
-          <a
-            key={index}
-            href={item.url}
-            target="_blank"
-            rel="noreferrer"
-            className="transition-all duration-300 flex w-fit h-fit p-2 p-2 rounded-full bg-theme-sidebar-footer-icon hover:bg-theme-sidebar-footer-icon-hover hover:border-slate-100"
-          >
-            {React.createElement(
-              ICON_COMPONENTS?.[item.icon] ?? ICON_COMPONENTS.Info,
-              {
-                weight: "fill",
-                className: "h-5 w-5",
-                color: "var(--theme-sidebar-footer-icon-fill)",
-              }
-            )}
-          </a>
-        ))}
+        {footerData.map((item, index) => {
+          // Force specific names for specific icons
+          let displayName;
+          if (item.icon === "DiscordLogo") {
+            displayName = "Memories";
+          } else if (item.icon === "Info") {
+            displayName = "Logs";
+          } else if (item.icon === "HouseLine") {
+            displayName = "Calendar";
+          } else {
+            displayName = item.label || item.icon;
+          }
+
+          return (
+            <a
+              key={index}
+              href={item.url}
+              target="_blank"
+              rel="noreferrer"
+              className="transition-all duration-300 p-2 rounded-full flex items-center text-sm font-medium bg-theme-sidebar-footer-icon hover:bg-theme-sidebar-footer-icon-hover hover:border-slate-100"
+              aria-label={displayName}
+              data-tooltip-id="footer-item"
+              data-tooltip-content={displayName}
+            >
+              {React.createElement(
+                ICON_COMPONENTS?.[item.icon] ?? ICON_COMPONENTS.Info,
+                {
+                  weight: "fill",
+                  className: "h-5 w-5",
+                  color: "var(--theme-sidebar-footer-icon-fill)",
+                }
+              )}
+              <span className="ml-1.5" style={{color: "var(--theme-sidebar-footer-icon-fill)"}}>
+                {displayName}
+              </span>
+            </a>
+          );
+        })}
         {!isMobile && <SettingsButton />}
       </div>
       <Tooltip
