@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="flex flex-col space-y-4">
         {/* Custom styled buttons with !important flags */}
         <a
-          href="https://app.leadtechai.net/Memories"
+          href="https://docs.google.com/spreadsheets/d/1HlErvgiT8YcCLymjS5vd8HaXi-RTbgMdGoiCapRqlhE/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
           style={{
@@ -54,7 +54,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://app.leadtechai.net/Logs"
+          href="https://docs.google.com/spreadsheets/d/1ke9ONjoC4M9ASqB8_WCMeTYcZ-un0ROHWqzJePAKDqM/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
           style={{
@@ -73,7 +73,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://app.leadtechai.net/Calendar"
+          href="https://calendar.google.com/calendar/u/0?cid=Y19kZTU5ODQ3OTUzYTAzNGMzMGJjYzYyYjlhM2I0ZjljOGIzOTkwYTIxZDIzNWYyMzNmZWYyNmFhYWE5OWQ5NDNhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
           target="_blank"
           rel="noreferrer"
           style={{
