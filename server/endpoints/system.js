@@ -614,10 +614,14 @@ function systemEndpoints(app) {
 
   app.get("/system/footer-data", [validatedRequest], async (_, response) => {
     try {
-      const footerData =
-        (await SystemSettings.get({ label: "footer_data" }))?.value ??
-        JSON.stringify([]);
-      response.status(200).json({ footerData: footerData });
+      // Override with hardcoded values to ensure the labels are used
+      const customFooterData = JSON.stringify([
+        {"icon":"DiscordLogo","url":"https://app.leadtechai.net/Memories","label":"Memories"},
+        {"icon":"Info","url":"https://app.leadtechai.net/Logs","label":"Logs"},
+        {"icon":"HouseLine","url":"https://app.leadtechai.net/Calendar","label":"Calendar"}
+      ]);
+
+      response.status(200).json({ footerData: customFooterData });
     } catch (error) {
       console.error("Error fetching footer data:", error);
       response.status(500).json({ message: "Internal server error" });
