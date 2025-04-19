@@ -54,7 +54,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://docs.google.com/spreadsheets/d/1ke9ONjoC4M9ASqB8_WCMeTYcZ-un0ROHWqzJePAKDqM/edit?usp=sharing"
+          href="https://docs.google.com/spreadsheets/d/1HlErvgiT8YcCLymjS5vd8HaXi-RTbgMdGoiCapRqlhE/edit?gid=67635839#gid=67635839"
           target="_blank"
           rel="noreferrer"
           style={{
