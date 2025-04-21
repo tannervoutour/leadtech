@@ -1,0 +1,25 @@
+{
+  "processed": [
+    {
+      "workspaceId": "3",
+      "thread_id": "1",
+      "lastProcessedAt": "0001-01-01T00:00:00",
+      "lastUserAIPair": "",
+      "lastChunkConversation": ""
+    },
+    {
+      "workspaceId": "3",
+      "thread_id": "default",
+      "lastProcessedAt": "0001-01-01T00:00:00",
+      "lastUserAIPair": "",
+      "lastChunkConversation": ""
+    },
+    {
+      "workspaceId": "1",
+      "thread_id": "default",
+      "lastProcessedAt": "0001-01-01T00:00:00",
+      "lastUserAIPair": "",
+      "lastChunkConversation": ""
+    }
+  ]
+}

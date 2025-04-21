@@ -1,0 +1,2 @@
+# Run memory cron job every hour at minute 0
+0 * * * * /home/tanner_outour/leadtech/scripts/memory_cron/run_memory_cron.sh
