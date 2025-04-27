@@ -48,13 +48,13 @@ def ensure_file_exists(filepath, default):
 
 
 def parse_date(date_str):
-    """Convert an ISO 8601 date string to a naive datetime (strip offsets)."""
+    """Convert an ISO 8601 date string to a naive datetime (strip offsets and microseconds)."""
     if not date_str:
         return datetime.min
     if date_str.endswith("Z"):
         date_str = date_str[:-1] + "+00:00"
     dt = datetime.fromisoformat(date_str)
-    return dt.replace(tzinfo=None)
+    return dt.replace(tzinfo=None, microsecond=0)
 
 
 def format_date(dt: datetime) -> str:
