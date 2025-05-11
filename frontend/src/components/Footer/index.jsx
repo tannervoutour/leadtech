@@ -54,7 +54,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://docs.google.com/spreadsheets/d/1HlErvgiT8YcCLymjS5vd8HaXi-RTbgMdGoiCapRqlhE/edit?gid=67635839#gid=67635839"
+          href="https://docs.google.com/spreadsheets/d/1ke9ONjoC4M9ASqB8_WCMeTYcZ-un0ROHWqzJePAKDqM/edit?gid=0#gid=0"
           target="_blank"
           rel="noreferrer"
           style={{
@@ -73,7 +73,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://calendar.google.com/calendar/u/0?cid=Y19kZTU5ODQ3OTUzYTAzNGMzMGJjYzYyYjlhM2I0ZjljOGIzOTkwYTIxZDIzNWYyMzNmZWYyNmFhYWE5OWQ5NDNhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+          href="https://calendar.google.com/calendar/u/1?cid=NGQ0MjU5MGI3M2JkM2ViODJjY2I0ZDM0YTQxNWY5MmE1N2U1ZTFmM2I0MDgxNGIwOTRiNWU4MTI4MjU4ZWUyN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
           target="_blank"
           rel="noreferrer"
           style={{
