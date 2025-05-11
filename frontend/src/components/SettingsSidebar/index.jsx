@@ -322,7 +322,7 @@ const SidebarOptions = ({ user = null, t }) => (
           href={paths.settings.appearance()}
           user={user}
           flex={true}
-          roles={["admin", "manager"]}
+          roles={["admin"]}
         />
         <Option
           btnText={t("settings.tools")}
