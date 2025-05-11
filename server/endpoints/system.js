@@ -616,9 +616,9 @@ function systemEndpoints(app) {
     try {
       // Override with hardcoded values to ensure the labels are used
       const customFooterData = JSON.stringify([
-        {"icon":"DiscordLogo","url":"https://app.leadtechai.net/Memories","label":"Memories"},
-        {"icon":"Info","url":"https://app.leadtechai.net/Logs","label":"Logs"},
-        {"icon":"HouseLine","url":"https://app.leadtechai.net/Calendar","label":"Calendar"}
+        {"icon":"DiscordLogo","url":"https://app.fixxit.ai/Memories","label":"Memories"},
+        {"icon":"Info","url":"https://app.fixxit.ai/Logs","label":"Logs"},
+        {"icon":"HouseLine","url":"https://app.fixxit.ai/Calendar","label":"Calendar"}
       ]);
 
       response.status(200).json({ footerData: customFooterData });
