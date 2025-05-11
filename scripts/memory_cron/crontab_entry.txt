@@ -1,2 +1,2 @@
-# Run memory cron job every hour at minute 0
-0 * * * * /home/tanner_outour/leadtech/scripts/memory_cron/run_memory_cron.sh
+# Run memory cron job daily at 3 AM CST (9 AM UTC)
+0 9 * * * /home/tanner_outour/leadtech/scripts/memory_cron/run_memory_cron.sh
