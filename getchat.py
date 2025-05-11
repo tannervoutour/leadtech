@@ -5,7 +5,7 @@ import os
 
 # ----- CONFIGURATION -----
 API_KEY = "D12M59S-TCJ416W-NE8QN2N-0PGRQAY"
-BASE_URL = "https://app.leadtechai.net/api"
+BASE_URL = "https://app.fixxit.ai/api"
 WEBHOOK_URL = "https://tannervoutour1.app.n8n.cloud/webhook-test/ff9d72c1-2364-410a-bbd7-ee9c84a13458"
 
 # Files for persistence:

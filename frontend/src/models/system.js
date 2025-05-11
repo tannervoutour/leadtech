@@ -1,4 +1,4 @@
-import { API_BASE, AUTH_TIMESTAMP, fullApiUrl } from "@/utils/constants";
+import { API_BASE, AUTH_TIMESTAMP, SERVER_URL, fullApiUrl } from "@/utils/constants";
 import { baseHeaders, safeJsonParse } from "@/utils/request";
 import DataConnector from "./dataConnector";
 import LiveDocumentSync from "./experimental/liveSync";
@@ -32,7 +32,7 @@ const System = {
       .catch(() => 0);
   },
   keys: async function () {
-    return await fetch(`${API_BASE}/setup-complete`)
+    return await fetch(`${SERVER_URL}${API_BASE}/setup-complete`)
       .then((res) => {
         if (!res.ok) throw new Error("Could not find setup information.");
         return res.json();
@@ -346,7 +346,7 @@ const System = {
     return { appName: customAppName, error: null };
   },
   fetchLogo: async function () {
-    const url = new URL(`${fullApiUrl()}/system/logo`);
+    const url = new URL(`${SERVER_URL}${API_BASE}/system/logo`);
     url.searchParams.append(
       "theme",
       localStorage.getItem("theme") || "default"
@@ -371,7 +371,7 @@ const System = {
       });
   },
   fetchPfp: async function (id) {
-    return await fetch(`${API_BASE}/system/pfp/${id}`, {
+    return await fetch(`${SERVER_URL}${API_BASE}/system/pfp/${id}`, {
       method: "GET",
       cache: "no-cache",
       headers: baseHeaders(),

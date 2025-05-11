@@ -1,5 +1,6 @@
-export const API_BASE = import.meta.env.VITE_API_BASE || "/api";
+export const API_BASE = "/api";
 export const ONBOARDING_SURVEY_URL = "https://onboarding.anythingllm.com";
+export const SERVER_URL = "https://app.fixxit.ai";
 
 export const AUTH_USER = "anythingllm_user";
 export const AUTH_TOKEN = "anythingllm_authToken";
@@ -46,7 +47,7 @@ export const NVIDIA_NIM_COMMON_URLS = [
 
 export function fullApiUrl() {
   if (API_BASE !== "/api") return API_BASE;
-  return `${window.location.origin}/api`;
+  return `${SERVER_URL}/api`;
 }
 
 export const POPUP_BROWSER_EXTENSION_EVENT = "NEW_BROWSER_EXTENSION_CONNECTION";
