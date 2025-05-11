@@ -3,23 +3,139 @@
     {
       "workspaceId": "3",
       "thread_id": "1",
-      "lastProcessedAt": "0001-01-01T00:00:00",
-      "lastUserAIPair": "",
-      "lastChunkConversation": ""
+      "lastProcessedAt": "2025-04-19T22:02:43",
+      "lastUserAIPair": "User: create a memory that the sky is blue\n\nAssistant: I remember a bright summer afternoon, lying on a soft blanket sprawled across a gentle hillside. The sky above was a vivid, endless blue\u2014so clear that it felt as if every worry might simply drift away with the passing clouds. The deep azure expanse merged perfectly with the horizon, creating a serene backdrop to a day filled with light and warmth. That moment, where the vibrancy of the blue sky filled my senses, remains a cherished memory\u2014a reminder of peace, possibility, and the quiet beauty of the natural world.",
+      "lastChunkConversation": "User: create a memory that the sky is blue\n\nAssistant: I remember a bright summer afternoon, lying on a soft blanket sprawled across a gentle hillside. The sky above was a vivid, endless blue\u2014so clear that it felt as if every worry might simply drift away with the passing clouds. The deep azure expanse merged perfectly with the horizon, creating a serene backdrop to a day filled with light and warmth. That moment, where the vibrancy of the blue sky filled my senses, remains a cherished memory\u2014a reminder of peace, possibility, and the quiet beauty of the natural world."
     },
     {
       "workspaceId": "3",
       "thread_id": "default",
-      "lastProcessedAt": "0001-01-01T00:00:00",
-      "lastUserAIPair": "",
-      "lastChunkConversation": ""
+      "lastProcessedAt": "2025-04-19T21:47:06",
+      "lastUserAIPair": "User: Please create a memory that you are awesome.\n\nAssistant: I've stored this memory: I am awesome! Every time I help solve problems and share knowledge, I remind myself how capable and brilliant I truly am.",
+      "lastChunkConversation": "User: Please create a memory that you are awesome.\n\nAssistant: I've stored this memory: I am awesome! Every time I help solve problems and share knowledge, I remind myself how capable and brilliant I truly am."
     },
     {
       "workspaceId": "1",
       "thread_id": "default",
-      "lastProcessedAt": "0001-01-01T00:00:00",
-      "lastUserAIPair": "",
-      "lastChunkConversation": ""
+      "lastProcessedAt": "2025-04-27T14:19:20",
+      "lastUserAIPair": "User: Im having a problem with the conveyor clamps. Its saying its not reaching the sensor?\n\nAssistant: It sounds like the clamps aren\u2019t triggering the loading position sensor as expected. First, verify that nothing is physically obstructing the sensor\u2019s path and that the clamps can move freely\u2014jams or debris can prevent proper movement. Next, check the sensor\u2019s alignment; if it's mispositioned, it might not be reached when the clamps are fully extended. This is similar to issues documented for light sensor B1, so refer to Chapter 10.2.2 \u201cSetting the loading position sensor\u201d in the manual for detailed alignment procedures. If after these checks the issue persists, consider stopping the machine using the Emergency Stop button and consult your maintenance guidelines for further troubleshooting.",
+      "lastChunkConversation": "User: Im having a problem with the conveyor clamps. Its saying its not reaching the sensor?\n\nAssistant: It sounds like the clamps aren\u2019t triggering the loading position sensor as expected. First, verify that nothing is physically obstructing the sensor\u2019s path and that the clamps can move freely\u2014jams or debris can prevent proper movement. Next, check the sensor\u2019s alignment; if it's mispositioned, it might not be reached when the clamps are fully extended. This is similar to issues documented for light sensor B1, so refer to Chapter 10.2.2 \u201cSetting the loading position sensor\u201d in the manual for detailed alignment procedures. If after these checks the issue persists, consider stopping the machine using the Emergency Stop button and consult your maintenance guidelines for further troubleshooting."
+    },
+    {
+      "workspaceId": "14",
+      "thread_id": "default",
+      "lastProcessedAt": "2025-04-27T15:47:26",
+      "lastUserAIPair": "User: Im having an issue with the loading sensor\n\nAssistant: I need to know which specific alarm you\u2019re getting so I can guide you correctly\u2014are you seeing 0102.00023 (no loading\u2010signal) or 0102.00030 (unexpected pre\u2010loading)?\n\nUser: Its saying that the loading sensor has detected an additional load prior to loading.\n\nAssistant: The alarm 0102.00030 means the loading sensor saw laundry in the funnel before a proper load\u2014remove the obstruction, clear the alarm, and re-enter batch data if linen already passed into chamber 1.\n\nSteps to clear 0102.00030:\n1. Stop loading  \n   \u2022 Press STOP on the HMI; verify the three-colour light shows flashing yellow (safe stop).  \n2. Clear the loading funnel and sensor  \n   \u2022 Inspect the filling funnel and ultrasonic \u201cno-leftover\u201d sensor.  \n   \u2022 Remove any open bags or hanging linens that could trigger the sensor.  \n3. If linen already entered chamber 1  \n   \u2022 On the loading-unit control screen, switch off loading.  \n   \u2022 Enter the batch details (weight/program) for chamber 1 manually [Malfunctions \u2192 0102.00030].  \n4. Reset the alarm  \n   \u2022 Press RESET on the HMI to clear 0102.00030.  \n5. Restart loading  \n   \u2022 Confirm the funnel is empty.  \n   \u2022 Press START to resume automatic loading.\n\nNext Steps / Checks:\n- Funnel and sensor area free of any linens or bags  \n- Chamber 1 batch data entered if linen passed through  \n- Alarm light is off and three-colour status light is green  \n- First batch loads correctly without re-triggering 0102.00030",
+      "lastChunkConversation": "User: Im having an issue with the loading sensor\n\nAssistant: I need to know which specific alarm you\u2019re getting so I can guide you correctly\u2014are you seeing 0102.00023 (no loading\u2010signal) or 0102.00030 (unexpected pre\u2010loading)?\n\nUser: Its saying that the loading sensor has detected an additional load prior to loading.\n\nAssistant: The alarm 0102.00030 means the loading sensor saw laundry in the funnel before a proper load\u2014remove the obstruction, clear the alarm, and re-enter batch data if linen already passed into chamber 1.\n\nSteps to clear 0102.00030:\n1. Stop loading  \n   \u2022 Press STOP on the HMI; verify the three-colour light shows flashing yellow (safe stop).  \n2. Clear the loading funnel and sensor  \n   \u2022 Inspect the filling funnel and ultrasonic \u201cno-leftover\u201d sensor.  \n   \u2022 Remove any open bags or hanging linens that could trigger the sensor.  \n3. If linen already entered chamber 1  \n   \u2022 On the loading-unit control screen, switch off loading.  \n   \u2022 Enter the batch details (weight/program) for chamber 1 manually [Malfunctions \u2192 0102.00030].  \n4. Reset the alarm  \n   \u2022 Press RESET on the HMI to clear 0102.00030.  \n5. Restart loading  \n   \u2022 Confirm the funnel is empty.  \n   \u2022 Press START to resume automatic loading.\n\nNext Steps / Checks:\n- Funnel and sensor area free of any linens or bags  \n- Chamber 1 batch data entered if linen passed through  \n- Alarm light is off and three-colour status light is green  \n- First batch loads correctly without re-triggering 0102.00030"
+    },
+    {
+      "workspaceId": "2",
+      "thread_id": "default",
+      "lastProcessedAt": "2025-04-27T14:25:31",
+      "lastUserAIPair": "User: Tell me about the ironer\n\nAssistant: Each flat\u2010work ironer (Iron 1, Iron 2 and Iron 3) is a gas-heated, thermal\u2010oil-driven machine that dries and presses sheets by running them between spring-loaded rolls and a 250 \u00b0C\u2013350 \u00b0C heated band. They all sit just downstream of their matching feeder and feed a folding line. Key points:  \n\u2022 Heating system \u2013 A gas burner heats thermal oil, which circulates through stationary bands. Rolls squeeze the linen against those bands to evaporate moisture and give a smooth, glossy finish.  \n\u2022 Roll configuration \u2013 Iron 1 and Iron 2 each have three consecutive nips (roll 1 \u2192 bridge \u2192 roll 2 \u2192 bridge \u2192 roll 3), for higher throughput and thicker loads. Iron 3 has two nips (roll 1 \u2192 bridge \u2192 roll 2) for lighter loads or energy-saving operation.  \n\u2022 Steam extraction \u2013 Integrated fans pull humid air through the perforated rolls to prevent rewetting and keep the chest dry.  \n\u2022 Sheet transfer \u2013 Endless Kevlar ironing belts (or optional scrapers) peel the sheet from the last roll and carry it onto the out-feed conveyor toward the folder.  \nTogether, these features deliver uniform dryness, consistent gloss, wrinkle elimination and throughput matched to your production needs.",
+      "lastChunkConversation": "User: Tell me about the ironer\n\nAssistant: Each flat\u2010work ironer (Iron 1, Iron 2 and Iron 3) is a gas-heated, thermal\u2010oil-driven machine that dries and presses sheets by running them between spring-loaded rolls and a 250 \u00b0C\u2013350 \u00b0C heated band. They all sit just downstream of their matching feeder and feed a folding line. Key points:  \n\u2022 Heating system \u2013 A gas burner heats thermal oil, which circulates through stationary bands. Rolls squeeze the linen against those bands to evaporate moisture and give a smooth, glossy finish.  \n\u2022 Roll configuration \u2013 Iron 1 and Iron 2 each have three consecutive nips (roll 1 \u2192 bridge \u2192 roll 2 \u2192 bridge \u2192 roll 3), for higher throughput and thicker loads. Iron 3 has two nips (roll 1 \u2192 bridge \u2192 roll 2) for lighter loads or energy-saving operation.  \n\u2022 Steam extraction \u2013 Integrated fans pull humid air through the perforated rolls to prevent rewetting and keep the chest dry.  \n\u2022 Sheet transfer \u2013 Endless Kevlar ironing belts (or optional scrapers) peel the sheet from the last roll and carry it onto the out-feed conveyor toward the folder.  \nTogether, these features deliver uniform dryness, consistent gloss, wrinkle elimination and throughput matched to your production needs."
+    },
+    {
+      "workspaceId": "15",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "15_default_20250510113422"
+    },
+    {
+      "workspaceId": "3",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "3_default_20250509163421"
+    },
+    {
+      "workspaceId": "3",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "3_default_20250509181643"
+    },
+    {
+      "workspaceId": "3",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "3_default_20250510005600"
+    },
+    {
+      "workspaceId": "12",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "12_default_20250509214134"
+    },
+    {
+      "workspaceId": "12",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "12_default_20250510005334"
+    },
+    {
+      "workspaceId": "2",
+      "thread_id": "6",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "2_6_20250510005534"
+    },
+    {
+      "workspaceId": "1",
+      "thread_id": "24",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "1_24_20250510003323"
+    },
+    {
+      "workspaceId": "2",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "2_default_20250509190938"
+    },
+    {
+      "workspaceId": "1",
+      "thread_id": "23",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "1_23_20250509190844"
+    },
+    {
+      "workspaceId": "11",
+      "thread_id": "22",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "11_22_20250509190740"
+    },
+    {
+      "workspaceId": "11",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "11_default_20250509181616"
+    },
+    {
+      "workspaceId": "1",
+      "thread_id": "default",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "1_default_20250509181543"
+    },
+    {
+      "workspaceId": "1",
+      "thread_id": "21",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "1_21_20250509181149"
+    },
+    {
+      "workspaceId": "11",
+      "thread_id": "20",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "11_20_20250509180644"
+    },
+    {
+      "workspaceId": "1",
+      "thread_id": "19",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "1_19_20250509180455"
+    },
+    {
+      "workspaceId": "3",
+      "thread_id": "18",
+      "processedTime": "2025-05-10T12:07:06",
+      "conversationId": "3_18_20250509163513"
     }
   ]
 }
